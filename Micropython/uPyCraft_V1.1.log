@@ -1,0 +1,49 @@
+Traceback (most recent call last):
+  File "uPyCraft.py", line 1525, in slotConnectSerial
+  File "C:\Python34\lib\site-packages\serial\serialutil.py", line 590, in inWaiting
+  File "C:\Python34\lib\site-packages\serial\serialwin32.py", line 257, in in_waiting
+serial.serialutil.SerialException: ClearCommError failed (PermissionError(13, '拒绝访问。', None, 5))
+Traceback (most recent call last):
+  File "uPyCraft.py", line 1525, in slotConnectSerial
+  File "C:\Python34\lib\site-packages\serial\serialutil.py", line 590, in inWaiting
+  File "C:\Python34\lib\site-packages\serial\serialwin32.py", line 257, in in_waiting
+serial.serialutil.SerialException: ClearCommError failed (PermissionError(13, '拒绝访问。', None, 5))
+Traceback (most recent call last):
+  File "uPyCraft.py", line 1539, in slotConnectSerial
+  File "uPyCraft.py", line 2343, in updateFirmware
+AttributeError: 'MainWidget' object has no attribute 'bottomText'
+Traceback (most recent call last):
+  File "uPyCraft.py", line 1569, in slotConnectSerial
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 28: invalid start byte
+Traceback (most recent call last):
+  File "uPyCraft.py", line 1569, in slotConnectSerial
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x8c in position 297: invalid start byte
+Traceback (most recent call last):
+  File "uPyCraft.py", line 1550, in slotConnectSerial
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x8c in position 168: invalid start byte
+Traceback (most recent call last):
+  File "uPyCraft.py", line 1525, in slotConnectSerial
+  File "C:\Python34\lib\site-packages\serial\serialutil.py", line 590, in inWaiting
+  File "C:\Python34\lib\site-packages\serial\serialwin32.py", line 257, in in_waiting
+serial.serialutil.SerialException: ClearCommError failed (PermissionError(13, '拒绝访问。', None, 5))
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\uPy1.0\uPyCraft\uPyCraft_src\readWriteUart.py", line 129, in run
+  File "C:\Python34\lib\site-packages\serial\serialutil.py", line 590, in inWaiting
+  File "C:\Python34\lib\site-packages\serial\serialwin32.py", line 257, in in_waiting
+serial.serialutil.SerialException: ClearCommError failed (PermissionError(13, '拒绝访问。', None, 5))
+Traceback (most recent call last):
+  File "uPyCraft.py", line 1525, in slotConnectSerial
+  File "C:\Python34\lib\site-packages\serial\serialutil.py", line 590, in inWaiting
+  File "C:\Python34\lib\site-packages\serial\serialwin32.py", line 257, in in_waiting
+serial.serialutil.SerialException: ClearCommError failed (OSError(22, '函数不正确。', None, 1))
+Traceback (most recent call last):
+  File "uPyCraft.py", line 1525, in slotConnectSerial
+  File "C:\Python34\lib\site-packages\serial\serialutil.py", line 590, in inWaiting
+  File "C:\Python34\lib\site-packages\serial\serialwin32.py", line 257, in in_waiting
+serial.serialutil.SerialException: ClearCommError failed (OSError(22, '函数不正确。', None, 1))
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\uPy1.0\uPyCraft\uPyCraft_src\check.py", line 74, in run
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xba in position 1141: invalid start byte
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\uPy1.0\uPyCraft\uPyCraft_src\check.py", line 74, in run
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xba in position 1141: invalid start byte
