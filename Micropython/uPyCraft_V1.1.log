@@ -47,3 +47,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xba in position 1141: inval
 Traceback (most recent call last):
   File "C:\Users\Administrator\Desktop\uPy1.0\uPyCraft\uPyCraft_src\check.py", line 74, in run
 UnicodeDecodeError: 'utf-8' codec can't decode byte 0xba in position 1141: invalid start byte
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\uPy1.0\uPyCraft\uPyCraft_src\readWriteUart.py", line 129, in run
+  File "C:\Python34\lib\site-packages\serial\serialutil.py", line 590, in inWaiting
+  File "C:\Python34\lib\site-packages\serial\serialwin32.py", line 257, in in_waiting
+serial.serialutil.SerialException: ClearCommError failed (PermissionError(13, '¾Ü¾ø·ÃÎÊ¡£', None, 5))
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\uPy1.0\uPyCraft\uPyCraft_src\readWriteUart.py", line 129, in run
+  File "C:\Python34\lib\site-packages\serial\serialutil.py", line 590, in inWaiting
+  File "C:\Python34\lib\site-packages\serial\serialwin32.py", line 257, in in_waiting
+serial.serialutil.SerialException: ClearCommError failed (PermissionError(13, '¾Ü¾ø·ÃÎÊ¡£', None, 5))
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\uPy1.0\uPyCraft\uPyCraft_src\readWriteUart.py", line 129, in run
+  File "C:\Python34\lib\site-packages\serial\serialutil.py", line 590, in inWaiting
+  File "C:\Python34\lib\site-packages\serial\serialwin32.py", line 257, in in_waiting
+serial.serialutil.SerialException: ClearCommError failed (PermissionError(13, '¾Ü¾ø·ÃÎÊ¡£', None, 5))

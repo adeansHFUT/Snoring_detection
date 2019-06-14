@@ -8,39 +8,50 @@ import time
 def update_queue(t):
   snoreq.enqueue(mic.read()) 
 def my_init(): #初始化:电机，麦克风，定时时钟，队列
-  motor = Mymotor(Pin(4), freq=800, duty=0)
-  mic = ADC(0)
-  buzz = Mybuzz(Pin(5), freq=100, duty=30)
+  motor = Mymotor(pinxx=Pin(4), freq=800, duty=0) #电机初始化
+  mic = ADC(0)  #麦克风初始化
+  buzz = Mybuzz(pinxx=Pin(5), freq=100, duty=0) #蜂鸣器初始化
   dic = {'size':10, 'low_limit':100, 'mid_limit':250, 'high_limit':500}
   snoreq = MYqueue(dic) 
   tim_update = Timer(-1) 
   tim_update.init(period=100, mode=Timer.PERIODIC, callback=update_queue)
-  return motor,mic,buzz,snoreq
-motor,mic,buzz,snoreq = my_init()
-buzzer_test(buzz)
-'''
-if __name__ == '__main__':    
-  motor,mic,snoreq = my_init()
+  return motor,buzz,snoreq,tim_update,mic
+#motor,mic,buzz,snoreq = my_init()
+#buzzer_test(buzz)
+
+def my_deinit(motor,buzz,tim_update): #turn off the motor microphone timer
+  motor.update(0)
+  buzz.update(0)
+  tim_update.deinit()
+  
+if __name__ == '__main__':  
+  motor,buzz,snoreq,tim_update,mic = my_init()
   snore = {}
   time.sleep(2) #延时，让其采集满一个队列
   while True:
     snoreq.detect(snore)
-    print(snore)
     rank = snore['rank']
-    if rank == 0:
-      motor.duty(0)
-    elif rank == 1:
-      motor.duty(60)
+    if rank == 0:  # rank 0 snoring
+      motor.update(0)
+    elif rank == 1: # rank 1 snoring
+      motor.update(1)
+      print(snore)
       time.sleep(1)
+      snoreq.set_sonreitems_zero()   #clear off the snore items in order to not detect the snore when treatment 
     elif rank == 2:
-      motor.duty(80)
+      motor.update(2)
+      print(snore)
       time.sleep(1)
+      snoreq.set_sonreitems_zero()
     elif rank == 3:
-      motor.duty(100)
+      motor.update(3)
+      print(snore)
       time.sleep(1)
+      snoreq.set_sonreitems_zero()
     else:
       print('error!')
-'''
+
+
 
 
 

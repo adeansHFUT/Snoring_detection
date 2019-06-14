@@ -15,6 +15,10 @@ class MYqueue:
       self.items.pop(0)
       
     self.items.append(item)
+    
+  def set_sonreitems_zero(self): # set zero to snore
+    for i in range(self.size):
+      self.enqueue(0)
       
   def detect(self,snore):  #鼾声检测算法，先最简单-算术平均
     sum = 0
@@ -37,6 +41,7 @@ class MYqueue:
 
   def size(self):
     return len(self.items)
+
 
 
 
